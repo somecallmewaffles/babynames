@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Voting Blocks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Random</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @voting_blocks.each do |voting_block| %>
+      <tr>
+        <td><%= voting_block.random %></td>
+        <td><%= link_to 'Show', voting_block %></td>
+        <td><%= link_to 'Edit', edit_voting_block_path(voting_block) %></td>
+        <td><%= link_to 'Destroy', voting_block, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Voting Block', new_voting_block_path %>

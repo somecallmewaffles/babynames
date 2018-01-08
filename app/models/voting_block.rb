@@ -1,0 +1,2 @@
+class VotingBlock < ApplicationRecord
+end

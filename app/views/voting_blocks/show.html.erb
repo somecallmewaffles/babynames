@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Random:</strong>
+  <%= @voting_block.random %>
+</p>
+
+<%= link_to 'Edit', edit_voting_block_path(@voting_block) %> |
+<%= link_to 'Back', voting_blocks_path %>

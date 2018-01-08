@@ -1,0 +1,2 @@
+class BabyName < ApplicationRecord
+end
